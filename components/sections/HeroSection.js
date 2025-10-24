@@ -13,7 +13,7 @@ export default function HeroSection() {
 
   return (
     <section className="min-h-screen bg-white relative overflow-hidden">
-      <div className="container mx-auto px-2 py-20 relative z-10">
+      <div className="container mx-auto px-2 py-20 relative z-10 max-w-7xl">
         {/* Centered Content */}
         <motion.div 
           ref={ref}
@@ -28,7 +28,7 @@ export default function HeroSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="text-5xl lg:text-6xl xl:text-6xl font-bold text-gray-900 leading-tight"
+                className="text-4xl sm:text-5xl lg:text-6xl xl:text-6xl font-bold text-gray-900 leading-tight px-4"
               >
                 Find Your Perfect Tech Career Path In Three Minutes
               </motion.h1>
@@ -37,7 +37,7 @@ export default function HeroSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
-                className="text-xl lg:text-2xl text-gray-600 mt-8 leading-relaxed max-w-3xl mx-auto"
+                className="text-lg sm:text-xl lg:text-2xl text-gray-600 mt-8 leading-relaxed max-w-3xl mx-auto px-4"
               >
                 Answer a few questions and our AI will recommend you the best path if you were to start a career in tech. 
               </motion.p>
@@ -73,7 +73,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="max-w-6xl mx-auto mb-16"
+          className="max-w-6xl mx-auto mb-16 px-4"
         >
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">

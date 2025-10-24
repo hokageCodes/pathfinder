@@ -52,8 +52,8 @@ export default function FAQSection() {
   };
 
   return (
-    <section id="faq" className="py-20 bg-white">
-      <div className="container mx-auto px-2">
+    <section id="faq" className="py-20 bg-white overflow-hidden">
+      <div className="container mx-auto px-2 max-w-4xl">
         <motion.div 
           ref={ref}
           initial={{ opacity: 0, y: 30 }}

@@ -12,7 +12,7 @@ export default function AboutSection() {
   });
 
   return (
-    <section id="about" className="bg-white py-20">
+    <section id="about" className="bg-white py-20 overflow-hidden">
       <div className="container mx-auto px-2 max-w-6xl">
         <motion.div 
           ref={ref}
@@ -46,7 +46,7 @@ export default function AboutSection() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="order-1 lg:order-2"
           >
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">About TechPath</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">About PathFinder</h2>
             <p className="text-xl text-gray-600 leading-relaxed mb-8">
               We're on a mission to help people discover their ideal tech career path through intelligent, personalized recommendations. 
               Whether you're just starting out or looking to make a career change, we guide you to the perfect tech role.

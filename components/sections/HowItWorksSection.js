@@ -11,8 +11,8 @@ export default function HowItWorksSection() {
   });
 
   return (
-    <section id="how-it-works" className="py-20 bg-white">
-      <div className="container mx-auto px-2">
+    <section id="how-it-works" className="py-20 bg-white overflow-hidden">
+      <div className="container mx-auto px-2 max-w-6xl">
         <motion.div 
           ref={ref}
           initial={{ opacity: 0, y: 30 }}
