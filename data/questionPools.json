@@ -1,0 +1,851 @@
+{
+  "psychological": {
+    "questions": [
+      {
+        "id": "p1_variant_a",
+        "question": "You're stuck on something that feels really difficult. What do you naturally do first?",
+        "variant_group": "p1",
+        "options": [
+          {
+            "value": "step_back",
+            "label": "Step back and think about it from different angles",
+            "scores": { "data_scientist": 3, "cybersecurity": 2, "software_engineer": 1, "ui_ux": 1 }
+          },
+          {
+            "value": "ask_help",
+            "label": "Ask someone for help or advice",
+            "scores": { "product_manager": 3, "ui_ux": 2, "devops": 1, "software_engineer": 1 }
+          },
+          {
+            "value": "try_things",
+            "label": "Just start trying things until something clicks",
+            "scores": { "software_engineer": 3, "ui_ux": 2, "devops": 1, "data_scientist": 1 }
+          },
+          {
+            "value": "look_examples",
+            "label": "Look for examples of how others solved similar things",
+            "scores": { "data_scientist": 3, "cybersecurity": 2, "product_manager": 1, "software_engineer": 1 }
+          }
+        ]
+      },
+      {
+        "id": "p1_variant_b",
+        "question": "You're facing a puzzle that seems impossible at first. What's your approach?",
+        "variant_group": "p1",
+        "options": [
+          {
+            "value": "break_down",
+            "label": "Break it into smaller pieces and tackle each one",
+            "scores": { "data_scientist": 3, "software_engineer": 2, "cybersecurity": 2, "ui_ux": 1 }
+          },
+          {
+            "value": "draw_it",
+            "label": "Draw pictures or make diagrams to understand it better",
+            "scores": { "ui_ux": 3, "data_scientist": 2, "product_manager": 2, "software_engineer": 1 }
+          },
+          {
+            "value": "talk_through",
+            "label": "Talk it through with someone else",
+            "scores": { "product_manager": 3, "ui_ux": 2, "devops": 1, "cybersecurity": 1 }
+          },
+          {
+            "value": "experiment",
+            "label": "Try different approaches and see what happens",
+            "scores": { "software_engineer": 3, "devops": 2, "cybersecurity": 2, "data_scientist": 1 }
+          }
+        ]
+      },
+      {
+        "id": "p1_variant_c",
+        "question": "Something feels way over your head. What do you do?",
+        "variant_group": "p1",
+        "options": [
+          {
+            "value": "research_first",
+            "label": "Research and learn about it before diving in",
+            "scores": { "data_scientist": 3, "cybersecurity": 2, "software_engineer": 1, "ui_ux": 1 }
+          },
+          {
+            "value": "jump_in",
+            "label": "Jump in and learn as you go",
+            "scores": { "software_engineer": 3, "devops": 2, "ui_ux": 1, "data_scientist": 1 }
+          },
+          {
+            "value": "find_mentor",
+            "label": "Find someone who can guide you through it",
+            "scores": { "product_manager": 3, "ui_ux": 2, "devops": 1, "cybersecurity": 1 }
+          },
+          {
+            "value": "visualize",
+            "label": "Create a mental map of what you need to understand",
+            "scores": { "ui_ux": 3, "data_scientist": 2, "product_manager": 1, "software_engineer": 1 }
+          }
+        ]
+      },
+      {
+        "id": "p2_variant_a",
+        "question": "What kind of environment makes you feel most productive?",
+        "variant_group": "p2",
+        "options": [
+          {
+            "value": "quiet_focused",
+            "label": "Quiet space where I can concentrate without distractions",
+            "scores": { "data_scientist": 3, "software_engineer": 2, "cybersecurity": 2, "ui_ux": 1 }
+          },
+          {
+            "value": "creative_energetic",
+            "label": "Lively, creative space with lots of energy and ideas flowing",
+            "scores": { "ui_ux": 3, "product_manager": 2, "software_engineer": 1, "data_scientist": 1 }
+          },
+          {
+            "value": "fast_dynamic",
+            "label": "Fast-paced environment where things are always changing",
+            "scores": { "devops": 3, "product_manager": 2, "cybersecurity": 1, "ui_ux": 1 }
+          },
+          {
+            "value": "organized_structured",
+            "label": "Well-organized space with clear processes and routines",
+            "scores": { "cybersecurity": 3, "data_scientist": 2, "software_engineer": 1, "devops": 1 }
+          }
+        ]
+      },
+      {
+        "id": "p2_variant_b",
+        "question": "Where do you do your best thinking?",
+        "variant_group": "p2",
+        "options": [
+          {
+            "value": "alone_quiet",
+            "label": "By myself in a quiet, peaceful place",
+            "scores": { "data_scientist": 3, "cybersecurity": 2, "software_engineer": 1, "ui_ux": 1 }
+          },
+          {
+            "value": "with_others",
+            "label": "Around other people, bouncing ideas back and forth",
+            "scores": { "product_manager": 3, "ui_ux": 2, "devops": 1, "cybersecurity": 1 }
+          },
+          {
+            "value": "moving_around",
+            "label": "While walking around or being active",
+            "scores": { "devops": 3, "software_engineer": 2, "ui_ux": 1, "data_scientist": 1 }
+          },
+          {
+            "value": "structured_space",
+            "label": "In a clean, organized workspace with everything in its place",
+            "scores": { "cybersecurity": 3, "data_scientist": 2, "software_engineer": 1, "ui_ux": 1 }
+          }
+        ]
+      },
+      {
+        "id": "p3_variant_a",
+        "question": "How do you like to learn something completely new?",
+        "variant_group": "p3",
+        "options": [
+          {
+            "value": "hands_on",
+            "label": "Jump right in and learn by doing, even if I make mistakes",
+            "scores": { "software_engineer": 3, "devops": 2, "cybersecurity": 2, "ui_ux": 1 }
+          },
+          {
+            "value": "understand_first",
+            "label": "Understand the big picture and theory before trying anything",
+            "scores": { "data_scientist": 3, "cybersecurity": 2, "software_engineer": 1, "ui_ux": 1 }
+          },
+          {
+            "value": "see_examples",
+            "label": "Watch examples and see how others do it first",
+            "scores": { "ui_ux": 3, "product_manager": 2, "data_scientist": 1, "software_engineer": 1 }
+          },
+          {
+            "value": "learn_together",
+            "label": "Learn alongside others through discussion and sharing",
+            "scores": { "product_manager": 3, "ui_ux": 2, "devops": 1, "cybersecurity": 1 }
+          }
+        ]
+      },
+      {
+        "id": "p3_variant_b",
+        "question": "When you need to figure out how something works, what's your style?",
+        "variant_group": "p3",
+        "options": [
+          {
+            "value": "tinker_around",
+            "label": "Tinker with it and see what happens",
+            "scores": { "software_engineer": 3, "devops": 2, "ui_ux": 1, "data_scientist": 1 }
+          },
+          {
+            "value": "read_instructions",
+            "label": "Read instructions or documentation carefully first",
+            "scores": { "data_scientist": 3, "cybersecurity": 2, "software_engineer": 1, "ui_ux": 1 }
+          },
+          {
+            "value": "watch_demos",
+            "label": "Watch demonstrations or videos of it in action",
+            "scores": { "ui_ux": 3, "product_manager": 2, "data_scientist": 1, "software_engineer": 1 }
+          },
+          {
+            "value": "ask_expert",
+            "label": "Ask someone who already knows how to do it",
+            "scores": { "product_manager": 3, "ui_ux": 2, "devops": 1, "cybersecurity": 1 }
+          }
+        ]
+      },
+      {
+        "id": "p4_variant_a",
+        "question": "What gets you most excited about your work?",
+        "variant_group": "p4",
+        "options": [
+          {
+            "value": "solve_puzzles",
+            "label": "Solving tricky puzzles and figuring out difficult challenges",
+            "scores": { "software_engineer": 3, "data_scientist": 2, "cybersecurity": 2, "ui_ux": 1 }
+          },
+          {
+            "value": "create_beauty",
+            "label": "Making things look beautiful and feel great to use",
+            "scores": { "ui_ux": 3, "product_manager": 2, "software_engineer": 1, "data_scientist": 1 }
+          },
+          {
+            "value": "help_people",
+            "label": "Making a real difference in people's lives",
+            "scores": { "product_manager": 3, "ui_ux": 2, "cybersecurity": 1, "data_scientist": 1 }
+          },
+          {
+            "value": "make_efficient",
+            "label": "Making things run smoother and more reliably",
+            "scores": { "devops": 3, "cybersecurity": 2, "data_scientist": 1, "software_engineer": 1 }
+          }
+        ]
+      },
+      {
+        "id": "p4_variant_b",
+        "question": "What makes you feel most satisfied at the end of the day?",
+        "variant_group": "p4",
+        "options": [
+          {
+            "value": "cracked_problem",
+            "label": "Finally figuring out something that was really challenging",
+            "scores": { "software_engineer": 3, "data_scientist": 2, "cybersecurity": 2, "ui_ux": 1 }
+          },
+          {
+            "value": "made_beautiful",
+            "label": "Creating something that looks and feels amazing",
+            "scores": { "ui_ux": 3, "product_manager": 2, "software_engineer": 1, "data_scientist": 1 }
+          },
+          {
+            "value": "helped_others",
+            "label": "Knowing I helped someone or made their day better",
+            "scores": { "product_manager": 3, "ui_ux": 2, "cybersecurity": 1, "data_scientist": 1 }
+          },
+          {
+            "value": "kept_safe",
+            "label": "Making sure everything is secure and running smoothly",
+            "scores": { "cybersecurity": 3, "devops": 2, "data_scientist": 1, "software_engineer": 1 }
+          }
+        ]
+      },
+      {
+        "id": "p5_variant_a",
+        "question": "When working on something, what matters most to you?",
+        "variant_group": "p5",
+        "options": [
+          {
+            "value": "get_perfect",
+            "label": "Getting every little detail exactly right",
+            "scores": { "ui_ux": 3, "cybersecurity": 2, "software_engineer": 1, "data_scientist": 1 }
+          },
+          {
+            "value": "try_new",
+            "label": "Trying new approaches and pushing boundaries",
+            "scores": { "software_engineer": 3, "data_scientist": 2, "ui_ux": 1, "cybersecurity": 1 }
+          },
+          {
+            "value": "keep_safe",
+            "label": "Making sure everything is secure and reliable",
+            "scores": { "cybersecurity": 3, "devops": 2, "software_engineer": 1, "data_scientist": 1 }
+          },
+          {
+            "value": "get_done",
+            "label": "Getting it done quickly and efficiently",
+            "scores": { "devops": 3, "product_manager": 2, "software_engineer": 1, "ui_ux": 1 }
+          }
+        ]
+      },
+      {
+        "id": "p5_variant_b",
+        "question": "What's your priority when building something?",
+        "variant_group": "p5",
+        "options": [
+          {
+            "value": "perfect_details",
+            "label": "Making sure every detail is polished and perfect",
+            "scores": { "ui_ux": 3, "cybersecurity": 2, "software_engineer": 1, "data_scientist": 1 }
+          },
+          {
+            "value": "innovate",
+            "label": "Doing something that hasn't been done before",
+            "scores": { "software_engineer": 3, "data_scientist": 2, "ui_ux": 1, "cybersecurity": 1 }
+          },
+          {
+            "value": "bulletproof",
+            "label": "Making it rock-solid and impossible to break",
+            "scores": { "cybersecurity": 3, "devops": 2, "software_engineer": 1, "data_scientist": 1 }
+          },
+          {
+            "value": "fast_delivery",
+            "label": "Getting it out there quickly so people can use it",
+            "scores": { "devops": 3, "product_manager": 2, "software_engineer": 1, "ui_ux": 1 }
+          }
+        ]
+      }
+    ]
+  },
+  "behavioral": {
+    "questions": [
+      {
+        "id": "b1_variant_a",
+        "question": "Time is running out and you're not done yet. What do you do?",
+        "variant_group": "b1",
+        "options": [
+          {
+            "value": "plan_carefully",
+            "label": "Make a careful plan and work through it step by step",
+            "scores": { "cybersecurity": 3, "data_scientist": 2, "software_engineer": 1, "ui_ux": 1 }
+          },
+          {
+            "value": "focus_important",
+            "label": "Focus only on the most important parts and skip the rest",
+            "scores": { "product_manager": 3, "devops": 2, "software_engineer": 1, "ui_ux": 1 }
+          },
+          {
+            "value": "get_help",
+            "label": "Get others to help and divide the work up",
+            "scores": { "ui_ux": 3, "product_manager": 2, "devops": 1, "cybersecurity": 1 }
+          },
+          {
+            "value": "stay_flexible",
+            "label": "Stay flexible and adapt as new information comes in",
+            "scores": { "devops": 3, "software_engineer": 2, "ui_ux": 1, "data_scientist": 1 }
+          }
+        ]
+      },
+      {
+        "id": "b1_variant_b",
+        "question": "You're running out of time on something important. How do you handle it?",
+        "variant_group": "b1",
+        "options": [
+          {
+            "value": "systematic_approach",
+            "label": "Create a systematic approach and stick to it",
+            "scores": { "cybersecurity": 3, "data_scientist": 2, "software_engineer": 1, "ui_ux": 1 }
+          },
+          {
+            "value": "prioritize_urgent",
+            "label": "Focus on what's most urgent and critical",
+            "scores": { "product_manager": 3, "devops": 2, "software_engineer": 1, "ui_ux": 1 }
+          },
+          {
+            "value": "team_up",
+            "label": "Team up with others to get it done faster",
+            "scores": { "ui_ux": 3, "product_manager": 2, "devops": 1, "cybersecurity": 1 }
+          },
+          {
+            "value": "adapt_quickly",
+            "label": "Adapt quickly to whatever comes up",
+            "scores": { "devops": 3, "software_engineer": 2, "ui_ux": 1, "data_scientist": 1 }
+          }
+        ]
+      },
+      {
+        "id": "b2_variant_a",
+        "question": "You realize you made a mistake. What's your first reaction?",
+        "variant_group": "b2",
+        "options": [
+          {
+            "value": "analyze_why",
+            "label": "Figure out exactly what went wrong and why",
+            "scores": { "data_scientist": 3, "cybersecurity": 2, "software_engineer": 1, "ui_ux": 1 }
+          },
+          {
+            "value": "fix_immediately",
+            "label": "Fix it right away and move on",
+            "scores": { "software_engineer": 3, "devops": 2, "ui_ux": 1, "product_manager": 1 }
+          },
+          {
+            "value": "tell_others",
+            "label": "Let others know and work together to fix it",
+            "scores": { "product_manager": 3, "ui_ux": 2, "devops": 1, "cybersecurity": 1 }
+          },
+          {
+            "value": "prevent_future",
+            "label": "Focus on making sure it doesn't happen again",
+            "scores": { "cybersecurity": 3, "devops": 2, "data_scientist": 1, "software_engineer": 1 }
+          }
+        ]
+      },
+      {
+        "id": "b2_variant_b",
+        "question": "Something you did didn't work out as expected. What do you do?",
+        "variant_group": "b2",
+        "options": [
+          {
+            "value": "understand_mistake",
+            "label": "Take time to understand what went wrong",
+            "scores": { "data_scientist": 3, "cybersecurity": 2, "software_engineer": 1, "ui_ux": 1 }
+          },
+          {
+            "value": "quick_fix",
+            "label": "Quickly fix it and keep going",
+            "scores": { "software_engineer": 3, "devops": 2, "ui_ux": 1, "product_manager": 1 }
+          },
+          {
+            "value": "communicate_issue",
+            "label": "Communicate the issue to the team",
+            "scores": { "product_manager": 3, "ui_ux": 2, "devops": 1, "cybersecurity": 1 }
+          },
+          {
+            "value": "learn_prevent",
+            "label": "Learn from it to prevent similar issues",
+            "scores": { "cybersecurity": 3, "devops": 2, "data_scientist": 1, "software_engineer": 1 }
+          }
+        ]
+      },
+      {
+        "id": "b3_variant_a",
+        "question": "How do you prefer to get feedback on your work?",
+        "variant_group": "b3",
+        "options": [
+          {
+            "value": "detailed_written",
+            "label": "Detailed written feedback I can review carefully",
+            "scores": { "data_scientist": 3, "cybersecurity": 2, "software_engineer": 1, "ui_ux": 1 }
+          },
+          {
+            "value": "face_to_face",
+            "label": "Face-to-face conversation where we can discuss it",
+            "scores": { "product_manager": 3, "ui_ux": 2, "devops": 1, "cybersecurity": 1 }
+          },
+          {
+            "value": "visual_demo",
+            "label": "Visual demonstration showing me what to improve",
+            "scores": { "ui_ux": 3, "product_manager": 2, "data_scientist": 1, "software_engineer": 1 }
+          },
+          {
+            "value": "quick_notes",
+            "label": "Quick, direct notes about what needs to change",
+            "scores": { "devops": 3, "software_engineer": 2, "cybersecurity": 1, "data_scientist": 1 }
+          }
+        ]
+      },
+      {
+        "id": "b3_variant_b",
+        "question": "When someone gives you feedback, what works best for you?",
+        "variant_group": "b3",
+        "options": [
+          {
+            "value": "thorough_analysis",
+            "label": "Thorough analysis with specific examples",
+            "scores": { "data_scientist": 3, "cybersecurity": 2, "software_engineer": 1, "ui_ux": 1 }
+          },
+          {
+            "value": "open_discussion",
+            "label": "Open discussion where we can talk it through",
+            "scores": { "product_manager": 3, "ui_ux": 2, "devops": 1, "cybersecurity": 1 }
+          },
+          {
+            "value": "show_examples",
+            "label": "Show me examples of what good looks like",
+            "scores": { "ui_ux": 3, "product_manager": 2, "data_scientist": 1, "software_engineer": 1 }
+          },
+          {
+            "value": "straightforward",
+            "label": "Straightforward, no-nonsense feedback",
+            "scores": { "devops": 3, "software_engineer": 2, "cybersecurity": 1, "data_scientist": 1 }
+          }
+        ]
+      },
+      {
+        "id": "b4_variant_a",
+        "question": "Things keep changing around you. How do you handle it?",
+        "variant_group": "b4",
+        "options": [
+          {
+            "value": "adapt_quickly",
+            "label": "Adapt quickly and roll with the changes",
+            "scores": { "devops": 3, "software_engineer": 2, "ui_ux": 1, "data_scientist": 1 }
+          },
+          {
+            "value": "analyze_impact",
+            "label": "Analyze how the changes affect everything else",
+            "scores": { "data_scientist": 3, "cybersecurity": 2, "software_engineer": 1, "ui_ux": 1 }
+          },
+          {
+            "value": "communicate_concerns",
+            "label": "Communicate concerns and work with others to adjust",
+            "scores": { "product_manager": 3, "ui_ux": 2, "devops": 1, "cybersecurity": 1 }
+          },
+          {
+            "value": "find_stability",
+            "label": "Find ways to create stability despite the changes",
+            "scores": { "cybersecurity": 3, "data_scientist": 2, "software_engineer": 1, "ui_ux": 1 }
+          }
+        ]
+      },
+      {
+        "id": "b4_variant_b",
+        "question": "The rules keep changing on a project you're working on. What's your approach?",
+        "variant_group": "b4",
+        "options": [
+          {
+            "value": "stay_flexible",
+            "label": "Stay flexible and adjust as needed",
+            "scores": { "devops": 3, "software_engineer": 2, "ui_ux": 1, "data_scientist": 1 }
+          },
+          {
+            "value": "understand_why",
+            "label": "Try to understand why the rules are changing",
+            "scores": { "data_scientist": 3, "cybersecurity": 2, "software_engineer": 1, "ui_ux": 1 }
+          },
+          {
+            "value": "discuss_impact",
+            "label": "Discuss the impact with the team and adjust together",
+            "scores": { "product_manager": 3, "ui_ux": 2, "devops": 1, "cybersecurity": 1 }
+          },
+          {
+            "value": "create_consistency",
+            "label": "Create consistency where possible despite the changes",
+            "scores": { "cybersecurity": 3, "data_scientist": 2, "software_engineer": 1, "ui_ux": 1 }
+          }
+        ]
+      },
+      {
+        "id": "b5_variant_a",
+        "question": "Someone criticizes your work. How do you respond?",
+        "variant_group": "b5",
+        "options": [
+          {
+            "value": "listen_carefully",
+            "label": "Listen carefully and ask for specific details",
+            "scores": { "data_scientist": 3, "cybersecurity": 2, "software_engineer": 1, "ui_ux": 1 }
+          },
+          {
+            "value": "defend_work",
+            "label": "Defend my work and explain my reasoning",
+            "scores": { "software_engineer": 3, "devops": 2, "ui_ux": 1, "product_manager": 1 }
+          },
+          {
+            "value": "discuss_together",
+            "label": "Discuss it together to find a solution",
+            "scores": { "product_manager": 3, "ui_ux": 2, "devops": 1, "cybersecurity": 1 }
+          },
+          {
+            "value": "learn_improve",
+            "label": "Use it as a learning opportunity to improve",
+            "scores": { "cybersecurity": 3, "devops": 2, "data_scientist": 1, "software_engineer": 1 }
+          }
+        ]
+      },
+      {
+        "id": "b5_variant_b",
+        "question": "Your work gets negative feedback. What's your reaction?",
+        "variant_group": "b5",
+        "options": [
+          {
+            "value": "understand_details",
+            "label": "Try to understand the specific issues they're pointing out",
+            "scores": { "data_scientist": 3, "cybersecurity": 2, "software_engineer": 1, "ui_ux": 1 }
+          },
+          {
+            "value": "explain_approach",
+            "label": "Explain my approach and see if we can find common ground",
+            "scores": { "software_engineer": 3, "devops": 2, "ui_ux": 1, "product_manager": 1 }
+          },
+          {
+            "value": "collaborate_fix",
+            "label": "Work together to figure out how to fix it",
+            "scores": { "product_manager": 3, "ui_ux": 2, "devops": 1, "cybersecurity": 1 }
+          },
+          {
+            "value": "take_constructive",
+            "label": "Take the constructive parts and use them to improve",
+            "scores": { "cybersecurity": 3, "devops": 2, "data_scientist": 1, "software_engineer": 1 }
+          }
+        ]
+      }
+    ]
+  },
+  "situational": {
+    "questions": [
+      {
+        "id": "s1_variant_a",
+        "question": "Something important stops working when people need it most. What's your first move?",
+        "variant_group": "s1",
+        "options": [
+          {
+            "value": "assess_damage",
+            "label": "Quickly assess what's broken and how bad it is",
+            "scores": { "cybersecurity": 3, "devops": 2, "software_engineer": 1, "data_scientist": 1 }
+          },
+          {
+            "value": "fix_immediately",
+            "label": "Drop everything and fix it right away",
+            "scores": { "software_engineer": 3, "devops": 2, "ui_ux": 1, "product_manager": 1 }
+          },
+          {
+            "value": "communicate_status",
+            "label": "Let people know what's happening and what you're doing",
+            "scores": { "product_manager": 3, "ui_ux": 2, "devops": 1, "cybersecurity": 1 }
+          },
+          {
+            "value": "find_workaround",
+            "label": "Find a temporary workaround while fixing the real problem",
+            "scores": { "devops": 3, "software_engineer": 2, "ui_ux": 1, "data_scientist": 1 }
+          }
+        ]
+      },
+      {
+        "id": "s1_variant_b",
+        "question": "Everything crashes right when everyone needs to use it. What do you do?",
+        "variant_group": "s1",
+        "options": [
+          {
+            "value": "diagnose_problem",
+            "label": "Diagnose the problem systematically",
+            "scores": { "cybersecurity": 3, "devops": 2, "software_engineer": 1, "data_scientist": 1 }
+          },
+          {
+            "value": "restart_quickly",
+            "label": "Try to restart or restore it as quickly as possible",
+            "scores": { "software_engineer": 3, "devops": 2, "ui_ux": 1, "product_manager": 1 }
+          },
+          {
+            "value": "keep_informed",
+            "label": "Keep everyone informed about what's happening",
+            "scores": { "product_manager": 3, "ui_ux": 2, "devops": 1, "cybersecurity": 1 }
+          },
+          {
+            "value": "backup_plan",
+            "label": "Activate backup systems or alternative solutions",
+            "scores": { "devops": 3, "cybersecurity": 2, "software_engineer": 1, "data_scientist": 1 }
+          }
+        ]
+      },
+      {
+        "id": "s2_variant_a",
+        "question": "You discover a major security problem. How do you handle it?",
+        "variant_group": "s2",
+        "options": [
+          {
+            "value": "contain_immediately",
+            "label": "Contain the problem immediately to prevent further damage",
+            "scores": { "cybersecurity": 3, "devops": 2, "software_engineer": 1, "data_scientist": 1 }
+          },
+          {
+            "value": "analyze_scope",
+            "label": "Analyze the full scope of the problem first",
+            "scores": { "data_scientist": 3, "cybersecurity": 2, "software_engineer": 1, "ui_ux": 1 }
+          },
+          {
+            "value": "alert_team",
+            "label": "Alert the team and coordinate a response",
+            "scores": { "product_manager": 3, "cybersecurity": 2, "devops": 1, "ui_ux": 1 }
+          },
+          {
+            "value": "document_everything",
+            "label": "Document everything carefully for investigation",
+            "scores": { "cybersecurity": 3, "data_scientist": 2, "software_engineer": 1, "ui_ux": 1 }
+          }
+        ]
+      },
+      {
+        "id": "s2_variant_b",
+        "question": "You find out private information has been exposed. What's your response?",
+        "variant_group": "s2",
+        "options": [
+          {
+            "value": "secure_immediately",
+            "label": "Secure the information immediately",
+            "scores": { "cybersecurity": 3, "devops": 2, "software_engineer": 1, "data_scientist": 1 }
+          },
+          {
+            "value": "investigate_impact",
+            "label": "Investigate the full impact of the exposure",
+            "scores": { "data_scientist": 3, "cybersecurity": 2, "software_engineer": 1, "ui_ux": 1 }
+          },
+          {
+            "value": "coordinate_response",
+            "label": "Coordinate with the team to respond appropriately",
+            "scores": { "product_manager": 3, "cybersecurity": 2, "devops": 1, "ui_ux": 1 }
+          },
+          {
+            "value": "track_evidence",
+            "label": "Track down how it happened and gather evidence",
+            "scores": { "cybersecurity": 3, "data_scientist": 2, "software_engineer": 1, "ui_ux": 1 }
+          }
+        ]
+      },
+      {
+        "id": "s3_variant_a",
+        "question": "A big feature you built stops working. What do you do?",
+        "variant_group": "s3",
+        "options": [
+          {
+            "value": "debug_systematically",
+            "label": "Debug it systematically to find the root cause",
+            "scores": { "software_engineer": 3, "data_scientist": 2, "cybersecurity": 1, "ui_ux": 1 }
+          },
+          {
+            "value": "rollback_quickly",
+            "label": "Roll back to the previous working version quickly",
+            "scores": { "devops": 3, "software_engineer": 2, "cybersecurity": 1, "ui_ux": 1 }
+          },
+          {
+            "value": "communicate_users",
+            "label": "Communicate with users about what's happening",
+            "scores": { "product_manager": 3, "ui_ux": 2, "devops": 1, "cybersecurity": 1 }
+          },
+          {
+            "value": "test_environment",
+            "label": "Test in a safe environment to understand the problem",
+            "scores": { "cybersecurity": 3, "data_scientist": 2, "software_engineer": 1, "ui_ux": 1 }
+          }
+        ]
+      },
+      {
+        "id": "s3_variant_b",
+        "question": "Something you created breaks when people try to use it. How do you handle it?",
+        "variant_group": "s3",
+        "options": [
+          {
+            "value": "find_bug",
+            "label": "Find the bug and fix it properly",
+            "scores": { "software_engineer": 3, "data_scientist": 2, "cybersecurity": 1, "ui_ux": 1 }
+          },
+          {
+            "value": "restore_working",
+            "label": "Restore the working version as fast as possible",
+            "scores": { "devops": 3, "software_engineer": 2, "cybersecurity": 1, "ui_ux": 1 }
+          },
+          {
+            "value": "update_users",
+            "label": "Update users on the situation and timeline",
+            "scores": { "product_manager": 3, "ui_ux": 2, "devops": 1, "cybersecurity": 1 }
+          },
+          {
+            "value": "isolate_problem",
+            "label": "Isolate the problem to prevent it from spreading",
+            "scores": { "cybersecurity": 3, "devops": 2, "software_engineer": 1, "data_scientist": 1 }
+          }
+        ]
+      },
+      {
+        "id": "s4_variant_a",
+        "question": "A customer reports a serious problem with something you made. What's your approach?",
+        "variant_group": "s4",
+        "options": [
+          {
+            "value": "reproduce_problem",
+            "label": "Try to reproduce the problem to understand it",
+            "scores": { "software_engineer": 3, "data_scientist": 2, "cybersecurity": 1, "ui_ux": 1 }
+          },
+          {
+            "value": "respond_quickly",
+            "label": "Respond quickly and work on a fix",
+            "scores": { "devops": 3, "software_engineer": 2, "ui_ux": 1, "product_manager": 1 }
+          },
+          {
+            "value": "communicate_customer",
+            "label": "Communicate directly with the customer about the issue",
+            "scores": { "product_manager": 3, "ui_ux": 2, "devops": 1, "cybersecurity": 1 }
+          },
+          {
+            "value": "investigate_thoroughly",
+            "label": "Investigate thoroughly to find the root cause",
+            "scores": { "cybersecurity": 3, "data_scientist": 2, "software_engineer": 1, "ui_ux": 1 }
+          }
+        ]
+      },
+      {
+        "id": "s4_variant_b",
+        "question": "Someone reports a critical issue with your work. How do you respond?",
+        "variant_group": "s4",
+        "options": [
+          {
+            "value": "understand_issue",
+            "label": "Get detailed information to understand the issue",
+            "scores": { "software_engineer": 3, "data_scientist": 2, "cybersecurity": 1, "ui_ux": 1 }
+          },
+          {
+            "value": "fix_urgently",
+            "label": "Treat it as urgent and work on a fix immediately",
+            "scores": { "devops": 3, "software_engineer": 2, "ui_ux": 1, "product_manager": 1 }
+          },
+          {
+            "value": "coordinate_response",
+            "label": "Coordinate with the team to respond appropriately",
+            "scores": { "product_manager": 3, "ui_ux": 2, "devops": 1, "cybersecurity": 1 }
+          },
+          {
+            "value": "analyze_impact",
+            "label": "Analyze the potential impact and scope of the issue",
+            "scores": { "cybersecurity": 3, "data_scientist": 2, "software_engineer": 1, "ui_ux": 1 }
+          }
+        ]
+      },
+      {
+        "id": "s5_variant_a",
+        "question": "All the stored information gets messed up. What's your first priority?",
+        "variant_group": "s5",
+        "options": [
+          {
+            "value": "stop_damage",
+            "label": "Stop any further damage from happening",
+            "scores": { "cybersecurity": 3, "devops": 2, "software_engineer": 1, "data_scientist": 1 }
+          },
+          {
+            "value": "restore_data",
+            "label": "Restore the data from backups as quickly as possible",
+            "scores": { "devops": 3, "cybersecurity": 2, "software_engineer": 1, "data_scientist": 1 }
+          },
+          {
+            "value": "assess_situation",
+            "label": "Assess the full situation and communicate with stakeholders",
+            "scores": { "product_manager": 3, "cybersecurity": 2, "devops": 1, "ui_ux": 1 }
+          },
+          {
+            "value": "investigate_cause",
+            "label": "Investigate what caused the data to get corrupted",
+            "scores": { "cybersecurity": 3, "data_scientist": 2, "software_engineer": 1, "ui_ux": 1 }
+          }
+        ]
+      },
+      {
+        "id": "s5_variant_b",
+        "question": "Important data becomes corrupted or lost. How do you handle it?",
+        "variant_group": "s5",
+        "options": [
+          {
+            "value": "prevent_spread",
+            "label": "Prevent the corruption from spreading to other data",
+            "scores": { "cybersecurity": 3, "devops": 2, "software_engineer": 1, "data_scientist": 1 }
+          },
+          {
+            "value": "recover_backup",
+            "label": "Recover the data from the most recent backup",
+            "scores": { "devops": 3, "cybersecurity": 2, "software_engineer": 1, "data_scientist": 1 }
+          },
+          {
+            "value": "coordinate_recovery",
+            "label": "Coordinate with the team to recover the data",
+            "scores": { "product_manager": 3, "cybersecurity": 2, "devops": 1, "ui_ux": 1 }
+          },
+          {
+            "value": "analyze_corruption",
+            "label": "Analyze the corruption to understand what happened",
+            "scores": { "cybersecurity": 3, "data_scientist": 2, "software_engineer": 1, "ui_ux": 1 }
+          }
+        ]
+      }
+    ]
+  }
+}

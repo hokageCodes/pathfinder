@@ -1,0 +1,169 @@
+{
+  "questions": [
+    {
+      "id": "psych_1",
+      "category": "psychological",
+      "question": "What excites you most about technology?",
+      "options": [
+        { "value": "visual", "label": "Creating beautiful interfaces and user experiences" },
+        { "value": "data", "label": "Uncovering patterns and insights in data" },
+        { "value": "security", "label": "Protecting systems and preventing cyber threats" },
+        { "value": "automation", "label": "Building systems that solve problems automatically" }
+      ]
+    },
+    {
+      "id": "psych_2",
+      "category": "psychological",
+      "question": "How do you prefer to work?",
+      "options": [
+        { "value": "collaborative", "label": "In teams with lots of communication and brainstorming" },
+        { "value": "focused", "label": "Independently with deep concentration" },
+        { "value": "varied", "label": "With a mix of solo work and team collaboration" },
+        { "value": "leading", "label": "Leading projects and guiding others" }
+      ]
+    },
+    {
+      "id": "psych_3",
+      "category": "psychological",
+      "question": "What type of problems do you enjoy solving?",
+      "options": [
+        { "value": "creative", "label": "Creative challenges that require innovative thinking" },
+        { "value": "logical", "label": "Logical puzzles and systematic problem-solving" },
+        { "value": "human", "label": "Problems that help people and improve their lives" },
+        { "value": "technical", "label": "Complex technical challenges with multiple variables" }
+      ]
+    },
+    {
+      "id": "psych_4",
+      "category": "psychological",
+      "question": "What motivates you most in your work?",
+      "options": [
+        { "value": "impact", "label": "Making a meaningful impact on users or society" },
+        { "value": "learning", "label": "Continuous learning and mastering new skills" },
+        { "value": "recognition", "label": "Recognition and advancement opportunities" },
+        { "value": "stability", "label": "Job security and stable income" }
+      ]
+    },
+    {
+      "id": "psych_5",
+      "category": "psychological",
+      "question": "How do you handle ambiguity?",
+      "options": [
+        { "value": "comfortable", "label": "I'm comfortable with uncertainty and enjoy exploring possibilities" },
+        { "value": "structured", "label": "I prefer clear requirements and structured approaches" },
+        { "value": "adaptive", "label": "I adapt well to changing situations" },
+        { "value": "clarifying", "label": "I ask questions to clarify requirements before proceeding" }
+      ]
+    },
+    {
+      "id": "behav_1",
+      "category": "behavioral",
+      "question": "How do you learn best?",
+      "options": [
+        { "value": "hands_on", "label": "By doing and building projects" },
+        { "value": "reading", "label": "Through reading documentation and tutorials" },
+        { "value": "watching", "label": "By watching videos and following along" },
+        { "value": "mentoring", "label": "Through mentorship and guidance from others" }
+      ]
+    },
+    {
+      "id": "behav_2",
+      "category": "behavioral",
+      "question": "When you encounter a difficult problem, you typically:",
+      "options": [
+        { "value": "persist", "label": "Keep trying until you figure it out" },
+        { "value": "research", "label": "Research and look up solutions online" },
+        { "value": "ask_help", "label": "Ask for help from peers or mentors" },
+        { "value": "break_down", "label": "Break it down into smaller, manageable parts" }
+      ]
+    },
+    {
+      "id": "behav_3",
+      "category": "behavioral",
+      "question": "How do you stay updated with technology trends?",
+      "options": [
+        { "value": "daily", "label": "Check tech news and blogs daily" },
+        { "value": "weekly", "label": "Set aside time weekly to explore new technologies" },
+        { "value": "project_based", "label": "Learn new things as needed for projects" },
+        { "value": "structured", "label": "Follow a structured learning plan or course" }
+      ]
+    },
+    {
+      "id": "behav_4",
+      "category": "behavioral",
+      "question": "What's your ideal work environment?",
+      "options": [
+        { "value": "remote", "label": "Fully remote with flexible hours" },
+        { "value": "hybrid", "label": "Mix of remote and office work" },
+        { "value": "office", "label": "Traditional office environment" },
+        { "value": "startup", "label": "Fast-paced startup environment" }
+      ]
+    },
+    {
+      "id": "behav_5",
+      "category": "behavioral",
+      "question": "How do you approach deadlines?",
+      "options": [
+        { "value": "early", "label": "I finish tasks well before deadlines" },
+        { "value": "on_time", "label": "I consistently meet deadlines" },
+        { "value": "pressure", "label": "I work best under pressure" },
+        { "value": "flexible", "label": "I prefer flexible timelines and iterative delivery" }
+      ]
+    },
+    {
+      "id": "situ_1",
+      "category": "situational",
+      "question": "If you had to choose, would you rather:",
+      "options": [
+        { "value": "frontend", "label": "Build the user interface that people interact with" },
+        { "value": "backend", "label": "Build the systems that power applications behind the scenes" },
+        { "value": "fullstack", "label": "Work on both frontend and backend aspects" },
+        { "value": "specialized", "label": "Focus deeply on one specialized area" }
+      ]
+    },
+    {
+      "id": "situ_2",
+      "category": "situational",
+      "question": "A critical system goes down. Your first reaction is to:",
+      "options": [
+        { "value": "diagnose", "label": "Systematically diagnose the problem" },
+        { "value": "communicate", "label": "Communicate with stakeholders about the issue" },
+        { "value": "quick_fix", "label": "Implement a quick fix to restore service" },
+        { "value": "analyze", "label": "Analyze logs and data to understand the root cause" }
+      ]
+    },
+    {
+      "id": "situ_3",
+      "category": "situational",
+      "question": "You're asked to implement a feature you've never built before. You:",
+      "options": [
+        { "value": "research_first", "label": "Research similar implementations and best practices first" },
+        { "value": "prototype", "label": "Start with a simple prototype to test your approach" },
+        { "value": "ask_experts", "label": "Consult with colleagues who have experience in this area" },
+        { "value": "learn_as_go", "label": "Start building and learn as you go" }
+      ]
+    },
+    {
+      "id": "situ_4",
+      "category": "situational",
+      "question": "Your team is behind schedule on a project. You would:",
+      "options": [
+        { "value": "reassess", "label": "Reassess scope and prioritize essential features" },
+        { "value": "increase_effort", "label": "Increase effort and work longer hours" },
+        { "value": "seek_help", "label": "Request additional resources or team members" },
+        { "value": "communicate", "label": "Communicate transparently with stakeholders about the delay" }
+      ]
+    },
+    {
+      "id": "situ_5",
+      "category": "situational",
+      "question": "You notice a potential security vulnerability in a system. You:",
+      "options": [
+        { "value": "report_immediately", "label": "Report it immediately to the security team" },
+        { "value": "investigate", "label": "Investigate further to understand the full scope" },
+        { "value": "document", "label": "Document the issue and propose a fix" },
+        { "value": "test", "label": "Test if it can be exploited before reporting" }
+      ]
+    }
+  ]
+}
