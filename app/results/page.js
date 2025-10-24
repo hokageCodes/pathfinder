@@ -8,6 +8,7 @@ import { calculateScores, getTopCareers, generateRecommendation as createRecomme
 import { toast } from 'react-toastify';
 import ProfileCard from '../../components/ProfileCard';
 import html2canvas from 'html2canvas';
+import jsPDF from 'jspdf';
 
 export default function Results() {
   const router = useRouter();

@@ -18,7 +18,7 @@ export default function ProfileCard({ recommendation, userName }) {
   return (
     <div 
       id="profile-card" 
-      className="w-full max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-2xl"
+      className="w-full max-w-xl mx-auto bg-white p-8 rounded-2xl shadow-2xl"
       style={{ 
         fontFamily: 'Inter, system-ui, sans-serif',
         lineHeight: '1.5',
@@ -27,53 +27,49 @@ export default function ProfileCard({ recommendation, userName }) {
     >
       {/* Header */}
       <div className="text-center mb-8">
-        <div className="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
-          <Star className="w-10 h-10 text-blue-600" />
+        <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+          <Star className="w-8 h-8 text-blue-600" />
         </div>
-        <h1 className="text-3xl font-bold text-gray-900 mb-2" style={{ fontFamily: 'Poppins, system-ui, sans-serif' }}>
+        <h1 className="text-2xl font-bold text-gray-900 mb-2" style={{ fontFamily: 'Poppins, system-ui, sans-serif' }}>
           {userName ? `${userName}'s Career Match` : 'Your Perfect Career Match'}
         </h1>
-        <h2 className="text-2xl font-semibold text-blue-600 mb-4" style={{ fontFamily: 'Poppins, system-ui, sans-serif' }}>
+        <h2 className="text-xl font-semibold text-blue-600 mb-3" style={{ fontFamily: 'Poppins, system-ui, sans-serif' }}>
           {recommendation.primary.name}
         </h2>
-        <p className="text-lg text-gray-600 mb-6">
+        <p className="text-base text-gray-600 mb-4 leading-relaxed">
           {recommendation.primary.description}
         </p>
         
         {/* Match Percentage */}
-        <div className="flex items-center justify-center gap-4 mb-6">
-          <span className={`px-4 py-2 rounded-full text-sm font-semibold ${getMatchColor(recommendation.primary.match_percentage)}`}>
+        <div className="flex items-center justify-center gap-3 mb-6">
+          <span className={`px-3 py-1 rounded-full text-sm font-semibold ${getMatchColor(recommendation.primary.match_percentage)}`}>
             {recommendation.primary.match_percentage}% Match
           </span>
           <span className="text-gray-500">•</span>
-          <span className="text-gray-600">{recommendation.primary.salary_range}</span>
+          <span className="text-gray-600 text-sm">{recommendation.primary.salary_range}</span>
         </div>
       </div>
 
-      {/* Key Details Grid */}
-      <div className="grid grid-cols-2 gap-6 mb-8">
-        <div className="bg-gray-50 rounded-lg p-4 text-center">
-          <DollarSign className="w-6 h-6 text-gray-600 mx-auto mb-2" />
-          <p className="text-sm text-gray-600 mb-1">Salary Range</p>
-          <p className="font-semibold text-gray-900">{recommendation.primary.salary_range}</p>
-        </div>
-        <div className="bg-gray-50 rounded-lg p-4 text-center">
-          <TrendingUp className="w-6 h-6 text-gray-600 mx-auto mb-2" />
-          <p className="text-sm text-gray-600 mb-1">Growth Rate</p>
-          <p className="font-semibold text-gray-900">{recommendation.primary.growth}</p>
-        </div>
+      {/* Why This Path Fits - Main Content */}
+      <div className="bg-blue-50 rounded-lg p-6 mb-6">
+        <h3 className="text-lg font-semibold text-gray-800 mb-3 text-center" style={{ fontFamily: 'Poppins, system-ui, sans-serif' }}>
+          Why This Path Fits You
+        </h3>
+        <p className="text-gray-700 text-center leading-relaxed text-sm">
+          {recommendation.reasoning}
+        </p>
       </div>
 
-      {/* Key Skills */}
-      <div className="mb-8">
-        <h3 className="text-lg font-semibold text-gray-800 mb-4 text-center" style={{ fontFamily: 'Poppins, system-ui, sans-serif' }}>
-          Key Skills You'll Need
+      {/* Key Skills - Simplified */}
+      <div className="mb-6">
+        <h3 className="text-base font-semibold text-gray-800 mb-3 text-center" style={{ fontFamily: 'Poppins, system-ui, sans-serif' }}>
+          Key Skills
         </h3>
         <div className="flex flex-wrap gap-2 justify-center">
-          {recommendation.primary.key_skills.map((skill, index) => (
+          {recommendation.primary.key_skills.slice(0, 4).map((skill, index) => (
             <span 
               key={index} 
-              className="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm font-medium"
+              className="px-2 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium"
             >
               {skill}
             </span>
@@ -81,42 +77,13 @@ export default function ProfileCard({ recommendation, userName }) {
         </div>
       </div>
 
-      {/* Why This Path Fits */}
-      <div className="bg-blue-50 rounded-lg p-6 mb-6">
-        <h3 className="text-lg font-semibold text-gray-800 mb-3 text-center" style={{ fontFamily: 'Poppins, system-ui, sans-serif' }}>
-          Why This Path Fits You
-        </h3>
-        <p className="text-gray-700 text-center leading-relaxed">
-          {recommendation.reasoning}
-        </p>
-      </div>
-
-      {/* Secondary Recommendations */}
-      <div className="mb-6">
-        <h3 className="text-lg font-semibold text-gray-800 mb-4 text-center" style={{ fontFamily: 'Poppins, system-ui, sans-serif' }}>
-          Other Great Options
-        </h3>
-        <div className="grid grid-cols-2 gap-4">
-          {recommendation.secondary.slice(0, 2).map((career, index) => (
-            <div key={index} className="bg-gray-50 rounded-lg p-4 text-center">
-              <h4 className="font-semibold text-gray-800 mb-2">{career.name}</h4>
-              <div className={`px-2 py-1 rounded-full text-xs font-medium ${getMatchBgColor(career.match_percentage)}`}>
-                <span className={getMatchColor(career.match_percentage)}>
-                  {career.match_percentage}% Match
-                </span>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
       {/* Footer */}
-      <div className="text-center border-t border-gray-200 pt-6">
-        <p className="text-sm text-gray-500 mb-2">
-          Generated by PathFinder - Your AI Career Guide
+      <div className="text-center border-t border-gray-200 pt-4">
+        <p className="text-sm text-gray-500 mb-1">
+          Generated by PathFinder
         </p>
         <p className="text-xs text-gray-400">
-          Take the quiz at pathfinder.tech to discover your perfect tech career
+          pathfinder.tech
         </p>
       </div>
     </div>
