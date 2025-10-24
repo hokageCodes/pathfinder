@@ -2,7 +2,7 @@
 
 An AI-powered quiz application that helps beginners discover their ideal tech career path through personalized recommendations.
 
-## Features
+### Features
 
 - 🧠 **Psychological Assessment**: Questions about interests, mindset, and work preferences
 - 👥 **Behavioral Analysis**: Understanding learning style and motivation patterns  
