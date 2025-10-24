@@ -6,6 +6,8 @@ import { useQuizStore } from '../../store/quizStore';
 import { ArrowLeft, ExternalLink, Star, RefreshCw, CheckCircle, Bot, User, TrendingUp, DollarSign, Users, Share2, Download, Copy, BarChart3, Target, BookOpen, Brain, Zap } from 'lucide-react';
 import { calculateScores, getTopCareers, generateRecommendation as createRecommendation, CAREER_PATHS } from '../../utils/questionSelector';
 import { toast } from 'react-toastify';
+import ProfileCard from '../../components/ProfileCard';
+import html2canvas from 'html2canvas';
 
 export default function Results() {
   const router = useRouter();
@@ -80,24 +82,34 @@ export default function Results() {
 
   const handleDownloadImage = async () => {
     try {
-      const html2canvas = (await import('html2canvas')).default;
       const element = document.getElementById('profile-card');
+      if (!element) {
+        toast.error("Profile card not found");
+        return;
+      }
+
       const canvas = await html2canvas(element, {
         backgroundColor: '#ffffff',
         scale: 2,
         useCORS: true,
-        allowTaint: true
+        allowTaint: true,
+        width: element.scrollWidth,
+        height: element.scrollHeight,
+        scrollX: 0,
+        scrollY: 0
       });
       
       const link = document.createElement('a');
-      link.download = `tech-career-${recommendation.primary.name.toLowerCase().replace(/\s+/g, '-')}.png`;
-      link.href = canvas.toDataURL();
+      link.download = `pathfinder-career-${recommendation.primary.name.toLowerCase().replace(/\s+/g, '-')}-${userName || 'profile'}.png`;
+      link.href = canvas.toDataURL('image/png');
+      document.body.appendChild(link);
       link.click();
+      document.body.removeChild(link);
       
-      toast.success("Profile card downloaded!");
+      toast.success("Profile card downloaded successfully!");
     } catch (error) {
       console.error('Error downloading image:', error);
-      toast.error("Failed to download image");
+      toast.error("Failed to download image. Please try again.");
     }
   };
 
@@ -282,8 +294,13 @@ export default function Results() {
           {/* Overview Tab */}
           {activeTab === 'overview' && (
             <div className="space-y-8">
+              {/* Profile Card for Download */}
+              <div className="hidden">
+                <ProfileCard recommendation={recommendation} userName={userName} />
+              </div>
+              
               {/* Primary Recommendation */}
-              <div id="profile-card" className="card p-8 text-center">
+              <div className="card p-8 text-center">
                 <div className="w-20 h-20 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Star className="w-10 h-10 text-primary-600" />
                 </div>
